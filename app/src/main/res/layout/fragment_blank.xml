@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <com.youth.banner.Banner
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:id="@+id/ban"
+      />
+  <com.google.android.material.tabs.TabLayout
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:id="@+id/tab"
+    />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="品牌制造商直供"
+      android:textSize="30dp"
+      android:layout_marginLeft="100dp"
+      />
+  <androidx.viewpager.widget.ViewPager
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/pager2"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="人气推荐"
+      android:textSize="20dp"
+      android:layout_marginLeft="100dp"
+      />
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/recyc2"
+      />
+</ScrollView>
+
+</LinearLayout>
